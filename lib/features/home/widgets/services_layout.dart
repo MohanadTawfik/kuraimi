@@ -148,7 +148,7 @@ class _ServiceButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final textColor;
+    final Color textColor;
     if (color == null) {
       textColor = Colors.white;
     } else {

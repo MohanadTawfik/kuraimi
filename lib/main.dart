@@ -19,7 +19,7 @@ void main() {
     DeviceOrientation.portraitDown,
   ]);
   runApp(DevicePreview(
-    enabled: true, // Enable Device Preview only in debug mode
+    enabled: false, // Enable Device Preview only in debug mode
     builder: (context) => const KuraimiAppClone(),
   ));
 }
@@ -34,7 +34,7 @@ class KuraimiAppClone extends StatelessWidget {
       title: 'Kuraimi Jawal Clone',
       // theme: ThemeData.light(),
       // darkTheme: ThemeData.dark(),
-      theme: AppTheme.lightTheme,
+      theme: AppTheme.darkTheme,
       darkTheme: AppTheme.darkTheme,
       builder: DevicePreview.appBuilder,
       themeMode:
